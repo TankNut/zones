@@ -83,8 +83,6 @@ if CLIENT then
 		end
 	end)
 else
-	hook.Add("InitPostEntity", "zones", zones.Load)
-
 	hook.Add("ShutDown", "zones", function()
 		if timer.Exists("zones.save") then
 			zones.Save(true)

@@ -74,3 +74,5 @@ function zones.Load()
 		zone:LoadCustomData(entry.Data)
 	end
 end
+
+hook.Add("InitPostEntity", "zones", zones.Load)
